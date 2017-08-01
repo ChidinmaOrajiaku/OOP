@@ -1,0 +1,21 @@
+{
+  "name": "fair-die",
+  "version": "1.0.0",
+  "description": "Fair die",
+  "main": "src/main.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha tests/test.js"
+  },
+  "keywords": [
+    "JavaScript"
+  ],
+  "author": "Chidinma Orajiaku",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.0",
+    "mocha": "^3.5.0"
+  }
+}
