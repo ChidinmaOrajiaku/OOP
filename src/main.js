@@ -38,10 +38,29 @@
   }
 }
 
-let FirstThrow = new FairDie(6);
-FirstThrow.total();
+var timesLost = Symbol()
+class DiceGameParticipant extends FairDie{
+  constructor(maxNum){
+    super(maxNum);
+    this.timesLost;
+  }
+  
+  get failureTimes(){
+    return this.timesLost
+  }
+  
+  set failureTimes(value){
+    if(value > 0){
+      return "Kudos"
+    }
+    this.timesLost = value
+  }
+  failureSummary(){
+    return "And i have lost " + this.timesLost + " times"
+  }
+}
 
-module.exports = {FairDie};
+module.exports = {FairDie, DiceGameParticipant};
 
 
 
