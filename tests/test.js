@@ -1,5 +1,7 @@
 const assert = require('chai').assert
 let FairDie = require('../src/main.js').FairDie;
+let DiceGameParticipant = require('../src/main.js').DiceGameParticipant;
+
 
 describe("FairDie", () => {
 
